@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+select {
+    width: auto;
+    font-size: 1.75em;
+}
+
+/* option {
+    font-size: 1.75em;
+} */
+
+.options {
+    display: flex;
+    flex-direction: row;
+    background-color: navy;
+    border: 3px solid black;
+    margin: 2%;
+}
+
+.paintDiv, .interiorDiv, .techDiv, .wheelDiv {
+    background-color: gray;
+    width: 20%;
+    border: 3px dotted black;
+    margin: 2%;
+    text-align: center;
+    padding: 1%;
+}
+
+button {
+    font-size: 1.75em;
+    margin: 2%;
+}
