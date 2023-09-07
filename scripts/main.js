@@ -3,12 +3,14 @@ import { orderButton } from "./orderButton.js"
 import { getOrders } from "./ordersList.js"
 import { getPaints } from "./paints.js"
 import { getTechnologies } from "./technologies.js"
+import { getVehicles } from "./vehicles.js"
 import { getWheels } from "./wheels.js"
 
 const render = async () => {
 
     let content = document.querySelector("#content")
 
+    const vehicleHTML = getVehicles()
     const paintHTML = getPaints()
     const interiorHTML = getInteriors()
     const techHTML = getTechnologies()
@@ -18,6 +20,7 @@ const render = async () => {
 
     content.innerHTML = `
         <selection class="options">
+            <div class="vehicleDiv">${vehicleHTML}</div>
             <div class="paintDiv">${paintHTML}</div>
             <div class="interiorDiv">${interiorHTML}</div>
             <div class="techDiv">${techHTML}</div>

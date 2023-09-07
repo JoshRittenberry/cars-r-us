@@ -1,40 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, p, div, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
 h1 {
     text-align: center;
-    font-size: 4em;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #2c3e50;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2em;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #34495e;
+}
+
+main#content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.selection .options > div {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 select {
-    width: auto;
-    font-size: 1.75em;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
-/* option {
-    font-size: 1.75em;
-} */
-
-.options {
-    display: flex;
-    flex-direction: row;
-    background-color: navy;
-    border: 3px solid black;
-    margin: 2%;
+button[name="orderButton"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.paintDiv, .interiorDiv, .techDiv, .wheelDiv {
-    background-color: gray;
-    width: 20%;
-    border: 3px dotted black;
-    margin: 2%;
-    text-align: center;
-    padding: 1%;
+button[name="orderButton"]:hover {
+    background-color: #2980b9;
 }
 
-button {
-    font-size: 1.75em;
-    margin: 2%;
+div > p {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }

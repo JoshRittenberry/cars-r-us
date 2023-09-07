@@ -1,8 +1,14 @@
 export const transientState = {
+    "vehicleId": 0,
     "paintId": 0,
     "interiorId": 0,
     "technologyId": 0,
     "wheelId": 0
+}
+
+export const setVehicle = (vehicleId) => {
+    transientState.vehicleId = vehicleId
+    console.log("The T-State's vehicleId property was updated to: " + vehicleId)
 }
 
 export const setPaint = (paintId) => {

@@ -1,4 +1,18 @@
 {
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "Car"
+    },
+    {
+      "id": 2,
+      "type": "SUV"
+    },
+    {
+      "id": 3,
+      "type": "Truck"
+    }
+  ],
   "paints": [
     {
       "id": 1,
@@ -89,11 +103,44 @@
   ],
   "orders": [
     {
+      "vehicleId": 1,
       "paintId": 2,
       "interiorId": 1,
       "technologyId": 2,
       "wheelId": 2,
       "id": 1
+    },
+    {
+      "vehicleId": 3,
+      "paintId": 4,
+      "interiorId": 3,
+      "technologyId": 4,
+      "wheelId": 4,
+      "id": 2
+    },
+    {
+      "vehicleId": 3,
+      "paintId": 4,
+      "interiorId": 4,
+      "technologyId": 4,
+      "wheelId": 4,
+      "id": 3
+    },
+    {
+      "vehicleId": 1,
+      "paintId": 2,
+      "interiorId": 2,
+      "technologyId": 1,
+      "wheelId": 1,
+      "id": 4
+    },
+    {
+      "vehicleId": 2,
+      "paintId": 3,
+      "interiorId": 1,
+      "technologyId": 2,
+      "wheelId": 1,
+      "id": 5
     }
   ]
 }
